@@ -12,15 +12,6 @@ class MovieService:
     def get_one(self, mid): # получение фильма
         return self.dao.get_one(mid)
 
-    '''def get_all_films_of_director(self, director): # получить все фильмы режиссера
-        return self.dao.get_one(director)
-
-    def get_all_films_of_genre(self, genre): # получить все фильмы жанра
-        return self.dao.get_one(genre)
-
-    def get_all_films_of_year(self, year): # получить все фильмы за год
-        return self.dao.get_one(year)'''
-
     def get_all(self): # получение всех фильмов
         return self.dao.get_all()
 

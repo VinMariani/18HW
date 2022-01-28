@@ -15,15 +15,6 @@ class MovieDAO:
     def get_all(self): # получить все фильмы
         return self.session.query(Movie).all()
 
-    '''def get_films_one_director(self, director): # получить все фильмы режиссера
-        return self.session.query(Movie).get(director)
-
-    def get_films_one_genre(self, genre): # получить все фильмы жанра
-        return self.session.query(Movie).get(genre)
-
-    def get_films_one_year(self, year): # получить все фильмы за год
-        return self.session.query(Movie).get(year)'''
-
     def create(self, data): # создать фильм
         movie = Movie(**data)
 

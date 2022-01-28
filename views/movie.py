@@ -51,11 +51,3 @@ class MovieView(Resource):
         movie_service.update(read_json)
 
         return '', 204
-
-    # def patch(self, mid: int):
-    # read_json = request.json
-    # read_json['id'] = mid
-
-    # movie_service.update_partial(read_json)
-
-    # return '', 204
